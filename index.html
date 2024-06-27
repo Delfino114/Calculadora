@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Aritmética</title>
+</head>
+<body>
+    <h1>Calculadora Aritmética</h1>
+    <form action="Procesar.php" method="post">
+        <label for="num1">Número 1:</label><br>
+        <input type="text" id="num1" name="num1" required pattern="[0-9]*" title="Ingrese un número válido"><br><br>
+
+        <label for="num2">Número 2:</label><br>
+        <input type="text" id="num2" name="num2" required pattern="[0-9]*" title="Ingrese un número válido"><br><br>
+
+        <label for="operacion">Operación:</label><br>
+        <select id="operacion" name="operacion" required>
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
